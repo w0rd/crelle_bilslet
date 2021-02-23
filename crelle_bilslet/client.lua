@@ -39,7 +39,7 @@ AddEventHandler("crellebil:slet", function()
     TaskLeaveVehicle(player, bil)
     SetVehicleDoorsLocked(bil,2)
     SetVehicleDoorsLockedForAllPlayers(bil, true)
-    Citizen.Wait(3700)
+    Citizen.Wait(cfg.tid)
     SetEntityAsMissionEntity(bil, true, true)
     Citizen.InvokeNative(0xEA386986E786A54F, Citizen.PointerValueIntInitialized(bil))
     else
